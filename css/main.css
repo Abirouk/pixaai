@@ -1,0 +1,17 @@
+/**
+ * Main CSS file that imports all component-specific CSS files
+ */
+
+/* Base styles */
+@import url('index.css');
+
+/* Component styles */
+@import url('components/navbar.css');
+@import url('components/hero.css');
+@import url('components/features.css');
+@import url('components/tools.css');
+@import url('components/pricing.css');
+@import url('components/faq.css');
+@import url('components/testimonials.css');
+@import url('components/blog.css');
+@import url('components/footer.css');

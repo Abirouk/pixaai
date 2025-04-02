@@ -1,0 +1,54 @@
+/**
+ * FAQ Component Styles
+ * Styles for the FAQ accordion section
+ */
+
+/* Style for the collapsible content (accordion) */
+.faq-accordion {
+    background-color: inherit;
+    color: var(--faq-h-text);
+    cursor: pointer;
+    padding: 15px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    transition: height 0.4s;
+}
+
+.faq .content {
+    padding: 0px 18px;
+    color: var(--faq-content-text);
+    height: max-content;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: justify;
+    max-height: 0px;
+    transition: max-height 0.4s, padding 0.4s;
+}
+
+/* Icon rotation animation */
+.faq-accordion .bi-plus {
+    transition: transform 0.3s ease;
+}
+
+/* FAQ section specific styling */
+.faq {
+    margin-bottom: 10px;
+}
+
+.faq-accordion:hover {
+    background-color: rgba(0, 0, 0, 0.03);
+}
+
+.faq-accordion.active {
+    font-weight: 500;
+}
+
+/* Make sure the content is initially hidden */
+.faq .content {
+    max-height: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    overflow: hidden;
+}
