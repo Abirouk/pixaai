@@ -9,15 +9,17 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
+    z-index: 1;
 }
 
 .hero-bg-gradient {
-    background: linear-gradient(180deg, var(--hero-gradient) 23%, rgba(0,0,0,0) 87%, var(--hero-gradient) 97%);
+    background: linear-gradient(180deg, var(--hero-gradient) 23%, rgba(0,0,0,0) 87%, var(--hero-gradient) 100%);
 }
 
 .gradient-text {
     background: rgb(215,215,215);
     background: linear-gradient(90deg, rgba(215,215,215,1) 18%, rgba(136,136,136,1) 71%);
+    background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }

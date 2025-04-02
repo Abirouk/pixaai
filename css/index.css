@@ -54,6 +54,7 @@ body {
     /* Hero section */
     --hero-gradient: #fcfcfc;
     --hero-bg-img: url("../assets/images/background/dots-dark.svg");
+
 }
 
 .tw-dark {
@@ -91,6 +92,7 @@ body {
     /* Hero section - dark theme */
     --hero-gradient: #000;
     --hero-bg-img: url("../assets/images/background/dots.svg");
+
 }
 
 /* General styling */
