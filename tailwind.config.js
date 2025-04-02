@@ -12,7 +12,8 @@ module.exports = {
 		extend: {
 			 
 			fontFamily: {
-				poly: ['"poly"', "serif"],
+				godber: ['Godber', 'sans-serif'],
+				raleway: ['Raleway', 'sans-serif'],
 			},
 		},
 	},
