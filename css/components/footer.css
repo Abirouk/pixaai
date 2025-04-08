@@ -1,0 +1,32 @@
+/**
+ * Footer Component Styles
+ * Styles for the website footer
+ */
+
+ .footer-link {
+    width: -moz-fit-content;
+    width: fit-content;
+    color: var(--footer-link);
+    transition: color 0.3s;
+}
+
+.footer-link:hover {
+    color: var(--footer-link-hover);
+}
+
+.footer-social-icon {
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.footer-social-icon:hover {
+    transform: translateY(-3px);
+    color: var(--footer-link-hover);
+}
+
+.footer-logo {
+    transition: opacity 0.3s ease;
+}
+
+.footer-logo:hover {
+    opacity: 0.8;
+}

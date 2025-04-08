@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/*Godber font-face declaration */
+@font-face {
+    font-family: 'Godber';
+    src: url('../assets/fonts/godber.woff2') format('woff2'),
+         url('../assets/fonts/godber.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/*Base font rules */
+body {
+    font-family: 'Raleway', sans-serif;
+}
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Godber', sans-serif;
+}
+
+:root{
+    /* Base colors */
+    --primary-text-color: #000;
+    --bg-color: #ffffff;
+
+    /* Button colors */
+    --btn-color: #fdfdfd;
+    --btn-bg: #000;
+
+    /* Header and navigation */
+    --header-link-hover: #000000;
+    --header-link-hover-bg: #bababa36;
+    --header-bg: #edececa5;
+    
+    /* Form elements */
+    --input-hover-bd-color: #232323;
+    
+    /* Dropdown menus */
+    --dropdown-bg: #f3f4f6;
+    --dropdown-hover-bg: #dddddd84;
+
+    /* FAQ section */
+    --faq-h-text: #0e0e0e;
+    --faq-content-text: #1e1e1e;
+
+    /* Separators */
+    --hr-color: #e5e7eb;
+
+    /* Footer */
+    --footer-link: #282828;
+    --footer-link-hover: #000;
+
+    /* Hero section */
+    --hero-gradient: #fcfcfc;
+    --hero-bg-img: url("../../assets/images/background/dots-dark.svg");
+
+}
+
+.tw-dark {
+    /* Base colors - dark theme */
+    --primary-text-color: #fff;
+    --bg-color: #000000;
+
+    /* Button colors - dark theme */
+    --btn-color: #000000;
+    --btn-bg: #ffffff;
+
+    /* Header and navigation - dark theme */
+    --header-link-hover: #ffffff;
+    --header-link-hover-bg: #8a8a8a5e;
+    --header-bg: #232323a5;
+    
+    /* Form elements - dark theme */
+    --input-hover-bd-color: #f8f8f8;
+    
+    /* Dropdown menus - dark theme */
+    --dropdown-bg: #171717;
+    --dropdown-hover-bg: #2d2d2ddb;
+
+    /* FAQ section - dark theme */
+    --faq-h-text: #efefef;
+    --faq-content-text: #d4d4d4;
+
+    /* Separators - dark theme */
+    --hr-color: #e1e1e195;
+
+    /* Footer - dark theme */
+    --footer-link: #cfcfcf;
+    --footer-link-hover: #ffffff;
+
+    /* Hero section - dark theme */
+    --hero-gradient: #000;
+    --hero-bg-img: url("../../assets/images/background/dots.svg");
+
+    
+    
+
+}
+
+/* General styling */
+html {
+    scroll-behavior: smooth;
+}
+
+body.modal-open {
+    overflow: hidden;
+}
+
+hr {
+    border-color: var(--hr-color); 
+    border-style: solid;
+}
+
+/* Button styling */
+.btn {
+    padding: 10px 15px;
+    width: max-content;
+    border-radius: 10px;
+    color: var(--btn-color);
+    background-color: var(--btn-bg);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    cursor: pointer;
+}
+
+.btn:disabled {
+    cursor: default;
+}
+
+/* Form input styling */
+.input {
+    padding: 10px;
+    background-color: transparent;
+    border-radius: 5px;
+    outline: none;
+    min-width: 100px;
+    border: 1px solid #979797;
+    transition: border 0.3s;
+}
+
+.input:active, .input:focus, .input:focus-within {
+    border: 1px solid var(--input-hover-bd-color) !important;
+}
+
+/* Scrollbar styling */
+.scrollbar::-webkit-scrollbar {
+    width: 5px;
+    height: 20px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    border-radius: 25px;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    background: #d7d7d7;
+    border-radius: 25px;
+}
+
+/* Dropdown styling */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+}
+
+.dropdown-toggle {
+    width: 100%;
+    outline: none;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--dropdown-bg);
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    left: 0px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.dropdown-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.dropdown-menu li:hover {
+    background-color: var(--dropdown-hover-bg);
+}
+
+/* Carousel styling */
+.carousel-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    max-width: 800px;
+}
+  
+.carousel {
+    display: inline-block;
+    animation: scroll 10s linear infinite;
+}
+  
+.carousel-img {
+    display: inline-block;
+    margin: 0 20px;
+}
+  
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+/* Utility classes */
+.opacity-0 {
+    opacity: 0 !important;
+}
+
+.opacity-100 {
+    opacity: 100 !important;
+}
+
+/* Logo display for light/dark mode */
+html.tw-dark .logo-light-mode {
+    display: none;
+  }
+  
+  html.tw-dark .logo-dark-mode {
+    display: block;
+  }
+  
+  html:not(.tw-dark) .logo-light-mode {
+    display: block;
+  }
+  
+  html:not(.tw-dark) .logo-dark-mode {
+    display: none;
+  }

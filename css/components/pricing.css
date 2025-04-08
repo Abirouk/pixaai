@@ -1,0 +1,21 @@
+/**
+ * Pricing Component Styles
+ * Specific styles for pricing plans section
+ */
+
+ .pricing-plan {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-plan:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-feature {
+    transition: opacity 0.3s ease;
+}
+
+.pricing-plan:hover .pricing-feature {
+    opacity: 1;
+}
