@@ -6,17 +6,26 @@
     class="hero-section tw-relative tw-mt-20 tw-flex tw-min-h-[100vh] tw-w-full tw-max-w-[100vw] tw-flex-col tw-overflow-hidden max-lg:tw-mt-[100px]"
     id="hero-section-alt"
 >
-    <!-- Full-screen background image -->
+        <!-- Full-screen background image -->
     <div class="tw-absolute tw-inset-0 tw-z-0">
-        <img 
-            src="../assets/images/background/hero-bg.webp"
-            alt="Hero background" 
-            class="tw-w-full tw-h-full tw-object-cover"
-        />
+        <picture>
+            <!-- Modern format with WebP -->
+            <source srcset="../assets/images/background/hero-bg.webp" type="image/webp">
+            <!-- Fallback for browsers that don't support WebP -->
+            <img 
+                src="../assets/images/background/hero-bg.jpg"
+                alt="Hero background" 
+                class="tw-w-full tw-h-full tw-object-cover"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+            />
+        </picture>
         <!-- Overlay gradient for better text readability -->
         <div class="tw-absolute tw-inset-0 tw-bg-black tw-bg-opacity-40 dark:tw-bg-opacity-60"></div>
     </div>
 
+    
     <div    
         class="hero-bg-gradient tw-relative tw-z-10 tw-flex tw-h-full tw-min-h-[100vh] tw-w-full tw-flex-col tw-place-content-center tw-gap-6 tw-p-[5%] max-xl:tw-place-items-center max-lg:tw-p-4"
     >
