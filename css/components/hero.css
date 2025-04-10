@@ -13,7 +13,18 @@
 }
 
 .hero-bg-gradient {
-    background: linear-gradient(180deg, var(--hero-gradient) 23%, rgba(0,0,0,0) 87%, var(--hero-gradient) 100%);
+    background: linear-gradient(180deg, 
+                rgba(255, 255, 255, 0.7) 0%, 
+                rgba(255, 255, 255, 0.4) 50%, 
+                rgba(255, 255, 255, 0.7) 100%);
+    transition: background 0.3s ease;
+}
+
+.tw-dark .hero-bg-gradient {
+    background: linear-gradient(180deg, 
+                rgba(0, 0, 0, 0.7) 0%, 
+                rgba(0, 0, 0, 0.4) 50%, 
+                rgba(0, 0, 0, 0.7) 100%);
 }
 
 .gradient-text {

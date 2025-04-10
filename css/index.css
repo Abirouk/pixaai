@@ -52,7 +52,6 @@ body {
     --footer-link-hover: #000;
 
     /* Hero section */
-    --hero-gradient: #fcfcfc;
     --hero-bg-img: url("../../assets/images/background/dots-dark.svg");
 
 }
@@ -90,7 +89,6 @@ body {
     --footer-link-hover: #ffffff;
 
     /* Hero section - dark theme */
-    --hero-gradient: #000;
     --hero-bg-img: url("../../assets/images/background/dots.svg");
 
     

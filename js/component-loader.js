@@ -7,7 +7,7 @@
 
 // Keep track of loaded components
 const loadedComponents = new Set();
-const TOTAL_COMPONENTS = 14; // Update this if components change
+const TOTAL_COMPONENTS = 14; // hmm Update this if components change
 
 document.addEventListener('DOMContentLoaded', function() {
     // List of components to load with their container IDs
