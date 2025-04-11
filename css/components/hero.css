@@ -14,8 +14,8 @@
 
 
 .hero-bg-gradient {
-    background: linear-gradient(99deg, rgba(26,20,105,0.7) 26%, rgba(253,187,45,0.7) 80%);
-    transition: background 0.3s ease;
+    background: linear-gradient(103deg, rgba(156,108,16,1) 0%, rgba(9,46,121,0.71) 0%, rgba(2,0,36,1) 80%) !important;
+    transition: background 0.3s ease !important;
 }
 
 .tw-dark .hero-bg-gradient {
